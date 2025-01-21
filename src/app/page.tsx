@@ -15,9 +15,10 @@ export default function Home() {
   const listSong = ref(db, 'songs');
   onValue(listSong,(snapshot) => {
     snapshot.forEach((item) => {
+      console.log(1);
       const data =item.val();
       const key = item.key;
-      if(array.length<3 && data.singerId[0] > 0)
+      if(array.length <3)
       {
         const singer = ref(db, 'singers/' + data.singerId[0]);
         onValue(singer,(snapshotsinger) => {
@@ -35,6 +36,7 @@ export default function Home() {
       }
     });
   });
+  console.log(array);
   //section-2
   const arrayCategory : any[]= [];
   const getCategory = ref(db, 'categories');
@@ -75,7 +77,6 @@ export default function Home() {
       }
     })
   });
-   
   return (
   <>
     <div className="flex gap-[20px]">
