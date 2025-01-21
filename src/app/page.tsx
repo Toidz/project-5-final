@@ -1,3 +1,4 @@
+"use client";
 import { useState, useEffect } from "react";
 import { Song } from "./components/song/Song";
 import { Metadata } from "next";
@@ -7,10 +8,10 @@ import { ref, onValue } from "firebase/database";
 import { Detailcategory } from "./components/detail/Detailcategory";
 import { Detailsinger } from "./components/detail/Detailsinger";
 
-export const metadata: Metadata = {
-  title: "Trang chủ",
-  description: "Nghe nhạc",
-};
+// export const metadata: Metadata = {
+//   title: "Trang chủ",
+//   description: "Nghe nhạc",
+// };
 
 export default function Home() {
   const [songs, setSongs] = useState<any[]>([]);
