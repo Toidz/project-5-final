@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import { Song } from "./components/song/Song";
 import { Metadata } from "next";
 import { Title } from "./components/title/Title";
