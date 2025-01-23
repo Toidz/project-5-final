@@ -8,7 +8,7 @@ export default function Login() {
   
   return (
    <>
-    <div className="mt-[60px] text-center w-[500px] mx-auto">
+    <div className="mt-[60px] text-center ms:w-[500px] w-auto ms:mx-auto ">
       <div className="font-[700] text-[24px] text-[#EFEEE0] mb-[20px]">Đăng Nhập Tài Khoản</div>
       <FormLogin />
     </div>

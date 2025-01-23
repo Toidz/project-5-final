@@ -98,8 +98,8 @@ export const CategorySong =(props :{item:any})=>{
                 <img src={item.img} alt="image" className="ml-[12px] w-[42px] aspect-square object-cover rounded-[6px]"></img>
             </Link>
             <span className="ml-[12px] font-[700] text-[14px] text-[#FFFFFF]">{item.title}</span>
-            <div className="flex-1 flex justify-end mr-[280px]">
-                <div className="w-[200px] font-[400] text-[12px] text-[#FFFFFF] text-center">
+            <div className="flex-1 flex justify-end md:mr-[280px] ms:mr-[200px] mr-[20px]">
+                <div className="md:w-[200px] ms:w-[170px] w-[100px] font-[400] text-[12px] text-[#FFFFFF] text-center">
                     {item.singer}
                 </div>
             </div>

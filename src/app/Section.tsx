@@ -78,14 +78,14 @@ export const Section = ()=>{
     console.log(songs);
     return(
         <>
-        <div className="flex gap-[20px]">
-            <div className="bg-[url('/right-bg.png')] bg-cover rounded-[15px] flex items-center w-[543px]">
+        <div className="flex gap-[20px] md:flex-nowrap flex-wrap md:mt-[0px] mt-[20px]">
+            <div className="bg-[url('/right-bg.png')] bg-cover rounded-[15px] flex items-center xl:w-[543px] md:w-[400px] w-[full]">
                 <div className="mr-[35px] ml-[30px] flex-1">
-                    <p className="text-[32px] text-[white] font-[700]">Nhạc EDM</p>
-                    <p className="text-[14px] text-[white] font-[500]">Top 100 Nhạc Electronic/Dance Âu Mỹ là danh sách 100 ca khúc hot nhất hiện tại 
-                    của thể loại Top 100 Nhạc Electronic/Dance Âu Mỹ</p>
+                    <p className="sm:text-[32px] text-[20px] text-[white] font-[700] ">Nhạc EDM</p>
+                    <p className="sm:text-[14px] text-[12px] text-[white] font-[500]">Top 100 Nhạc Electronic/Dance Âu Mỹ là danh sách 100 ca khúc hot nhất hiện tại 
+                    của thể loại Top 100 Nhạc Electronic</p>
                 </div>
-                <div className="mt-[44px] mr-[24px] w-[215px]">
+                <div className="mt-[44px] mr-[24px] xl:w-[215px] md:w-[150px] sm:w-[140px] w-[100px]">
                     <img alt="image" src="/right-image.png" className="w-full h-auto"></img>
                 </div>
             </div>
@@ -103,7 +103,7 @@ export const Section = ()=>{
 
         <div className="mt-[30px]">
             <Title title={"Danh Mục Nổi Bật"}/>
-            <div className="grid grid-cols-5 gap-[20px] mt-[20px]">
+            <div className="grid xl:grid-cols-5 md:grid-cols-4 sm:grid-cols-3 grid-cols-2 gap-[20px] mt-[20px]">
                 {
                 categories.map((item,index)=>(
                     <Detailcategory key={index} title={item.title} img={item.img} desc={item.desc} id={item.id}/>
@@ -113,7 +113,7 @@ export const Section = ()=>{
 
         <div className="mt-[30px]">
             <Title title={"Ca Sĩ Nổi Bật"}/>
-            <div className="grid grid-cols-5 gap-[20px] mt-[20px]">
+            <div className="grid xl:grid-cols-5 md:grid-cols-4 sm:grid-cols-3 grid-cols-2 gap-[20px] mt-[20px]">
                 {singers.map((item,index)=>(
                     <Detailsinger title={item.title} img={item.img} desc={item.desc} id={item.id} key={index}/>
                 ))}

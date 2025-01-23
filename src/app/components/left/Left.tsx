@@ -66,19 +66,29 @@ export const Left = ()=>{
     ]
     const pathname = usePathname();
     console.log(pathname);
+    const handleClick =()=>{
+        const innerMenu = document.querySelector(".inner-menu");
+        const innerNav = document.querySelector(".inner-nav");
+        if (innerMenu) {
+            innerMenu.classList.toggle("show");
+        }
+        if(innerNav){
+            innerNav.classList.toggle("showNav");
+        }
+    }
     return(
         <>
-            <div className="bg-[#212121] w-[280px] h-[100vh] sticky top-0 z-100">
-                <div className="bg-[#1C1C1C] py-[25px] pl-[20px]">
-                    <img src="/Logo.svg" alt="logo" className="h-[42px] w-auto"></img>
+            <div onClick={handleClick} className="bg-[#212121] xl:w-[280px] w-[200px] h-[100vh] sticky top-0 z-100 lg:block hidden inner-menu">
+                <div className="bg-[#1C1C1C] py-[25px] xl:pl-[20px] pl-[10px] lg:block hidden">
+                    <img src="/Logo.svg" alt="logo" className="xl:h-[42px] h-[36px] w-auto"></img>
                 </div>
-                <nav className="pl-[20px] mt-[34px]">
-                    <ul className="flex flex-col gap-[20px] mt-[20px]">
+                <nav className="xl:pl-[20px] pl-[10px] lg:mt-[34px] mt-0 inner-nav">
+                    <ul className="flex flex-col gap-[20px] lg:mt-[20px] mt-0 lg:pt-[0px] pt-[24px]">
                         {menu.map((item,index) => (
                             (item.isLogin === undefined || item.isLogin === isLogin) && (
                             <li key={index} className="text-white">
                                 <Link href={item.href} className={"flex gap-[20px] hover:text-[#00ADEF] " + (pathname===item.href ? "text-[#00ADEF]":"text-white")}>
-                                    <span className="text-[28px] h-[23px] w-[23px]">{item.icon}</span>
+                                    <span className="ms:text-[28px] text-[24px] h-[23px] w-[23px]">{item.icon}</span>
                                     <span className="font-[700]">{item.title}</span>
                                 </Link>
                             </li>

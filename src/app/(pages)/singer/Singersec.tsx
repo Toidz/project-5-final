@@ -32,7 +32,7 @@ export default function Singersec() {
    <>
     <div className="mt-[30px]">
       <Title title={"Danh Mục Ca Sĩ"}/>
-      <div className="grid grid-cols-5 gap-[20px] mt-[20px]">
+      <div className="grid xl:grid-cols-5 md:grid-cols-4 sm:grid-cols-3 grid-cols-2  gap-[20px] mt-[20px]">
         {singer.map((item)=>(
          <Detailsinger title={item.title} img={item.img} desc={item.desc} id={item.id}/>
         ))}

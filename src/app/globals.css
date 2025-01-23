@@ -33,3 +33,46 @@ body {
   cursor: pointer;
 }
 /* End Range */
+.show{
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  text-align: left;
+  background: #1c1c1c67;
+
+}
+.showNav{
+  height: 100%;
+  width: 250px;
+  position: relative;
+  z-index: 1;
+  background: #1C1C1C;
+}
+
+.showsearch{
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  text-align: left;
+  background: #1c1c1c67;
+}
+.showform{
+  padding: 20px;
+  width: 300px;
+  top:20px;
+  right:0;
+  position:absolute;
+  z-index: 1;
+  background: #1C1C1C;
+  display: flex;
+}
+
+.showform input{
+  background: transparent;
+}
