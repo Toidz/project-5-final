@@ -20,7 +20,7 @@ export default function RootLayout({
       </head>
       <body>
         <div className="relative">
-          <div className="sm:container sm:mx-auto w-auto mx-[15px]">
+          <div className="container mx-auto custom-container">
             <div className="flex gap-[20px]">
               <Left />
               <div className="flex-1 py-[20px] mb-[100px]">

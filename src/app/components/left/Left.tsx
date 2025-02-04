@@ -69,11 +69,13 @@ export const Left = ()=>{
     const handleClick =()=>{
         const innerMenu = document.querySelector(".inner-menu");
         const innerNav = document.querySelector(".inner-nav");
-        if (innerMenu) {
-            innerMenu.classList.toggle("show");
-        }
-        if(innerNav){
-            innerNav.classList.toggle("showNav");
+        if (window.innerWidth < 992) {
+            if (innerMenu) {
+                innerMenu.classList.toggle("show");
+            }
+            if (innerNav) {
+                innerNav.classList.toggle("showNav");
+            }
         }
     }
     return(

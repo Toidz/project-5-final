@@ -7,8 +7,8 @@ export const metadata: Metadata = {
 export default function Register() {
   return (
    <>
-    <div className="mt-[60px] text-center ms:w-[500px] w-auto ms:mx-auto">
-      <div className="font-[700] text-[24px] text-[#EFEEE0] mb-[20px]">Đăng Ký Tài Khoản</div>
+    <div className="mt-[60px] text-center sm:w-[500px] w-auto sm:mx-auto">
+      <div className="font-[700] sm:text-[24px] text-[20px] text-[#EFEEE0] mb-[20px]">Đăng Ký Tài Khoản</div>
       <FormRegister />
     </div>
    </>

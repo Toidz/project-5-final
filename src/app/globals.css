@@ -13,7 +13,13 @@ body {
 .container{
   width: 1280px; 
 }
-
+@media (max-width: 576px) {
+  .custom-container {
+    margin-left: 15px;
+    margin-right: 15px;
+    width: auto;
+  }
+}
 /* Range */
 .range-sm::-webkit-slider-thumb {
   -webkit-appearance: none;

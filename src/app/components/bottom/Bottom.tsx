@@ -9,7 +9,7 @@ export const Bottom = ()=>{
           <audio className="inner-audio hidden">
             <source src="/" type="audio/mpeg"/>
           </audio>
-          <div className="sm:container sm:mx-auto w-auto mx-[15px] flex gap-[67px] sm:flex-nowrap flex-wrap sm:h-auto h-[70px]">
+          <div className="container mx-auto custom-container flex gap-[67px] sm:flex-nowrap flex-wrap sm:h-auto h-[70px]">
             <div className="flex items-center">
               <img src="https://daily.jstor.org/wp-content/uploads/2023/01/good_times_with_bad_music_1050x700.jpg" alt="img" className="w-[48px] h-[48px] rounded-[6px] inner-image"></img>
               <div className="ml-[12px] font-[700] text-white">
