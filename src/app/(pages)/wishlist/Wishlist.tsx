@@ -10,6 +10,7 @@ export default function WishList() {
     const arraySong:any[] =[];
     const getlikesong = ref(db, `songs`);
     onValue(getlikesong, (items) => {
+      arraySong.length = 0; 
        items.forEach(item => {
          const data = item.val();
          const key = item.key;
